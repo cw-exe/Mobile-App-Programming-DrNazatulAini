@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">a213396_lingchinwei_drnazatulaini_lab4</string>
+    <string name="screen_home">AtlasLearn</string>
+    <string name="screen_enroll">Enroll in AtlasLearn</string>
+    <string name="screen_preview">Enrollment Preview</string>
+    <string name="screen_confirm">Enrollment Confirmed</string>
+    <string name="back">Back</string>
+</resources>
