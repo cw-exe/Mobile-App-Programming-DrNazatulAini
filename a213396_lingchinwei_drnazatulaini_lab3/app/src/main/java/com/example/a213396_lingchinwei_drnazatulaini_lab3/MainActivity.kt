@@ -30,19 +30,18 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.a213396_lingchinwei_drnazatulaini_lab3.ui.theme.A213396_lingchinwei_drnazatulaini_lab1Theme
+import com.example.a213396_lingchinwei_drnazatulaini_lab3.ui.theme.AppTheme
+import com.example.a213396_lingchinwei_drnazatulaini_lab3.ui.theme.AccentGold
+import com.example.a213396_lingchinwei_drnazatulaini_lab3.ui.theme.AccentPurple
+import com.example.a213396_lingchinwei_drnazatulaini_lab3.ui.theme.AccentGreen
+import com.example.a213396_lingchinwei_drnazatulaini_lab3.ui.theme.AtlasNavy
+import com.example.a213396_lingchinwei_drnazatulaini_lab3.ui.theme.AtlasBlue
+import com.example.a213396_lingchinwei_drnazatulaini_lab3.ui.theme.AtlasSky
+import com.example.a213396_lingchinwei_drnazatulaini_lab3.ui.theme.AtlasText
+import com.example.a213396_lingchinwei_drnazatulaini_lab3.ui.theme.AtlasCard
 
 // ── Blue Palette (aligned with Material Theme) ────────────────────────────────
-val AtlasNavy    = Color(0xFF0D1B3E)   // deep navy header / nav bar
-val AtlasBlue    = Color(0xFF1565C0)   // primary brand blue
-val AtlasSky     = Color(0xFF42A5F5)   // accent / highlight
-val AtlasCard    = Color(0xFF1A2D5A)   // card surface inside dark areas
-val AtlasText    = Color(0xFFE3EEFF)   // on-dark text
 
-// Subject accent colours (kept readable on dark cards)
-val AccentGold   = Color(0xFFFBBF24)
-val AccentPurple = Color(0xFFC084FC)
-val AccentGreen  = Color(0xFF4ADE80)
 
 // ── Subject data ──────────────────────────────────────────────────────────────
 data class Subject(
@@ -76,7 +75,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            A213396_lingchinwei_drnazatulaini_lab1Theme {
+            AppTheme {
                 StudyAppMainScreen()
             }
         }
@@ -178,6 +177,7 @@ fun StudyAppMainScreen() {
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
+                    .weight(1f)
                     .offset(y = (-30).dp)
                     .background(AtlasNavy)
                     .padding(horizontal = 20.dp, vertical = 24.dp)

@@ -12,7 +12,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.a213396_lingchinwei_drnazatulaini_lab2"
+        applicationId = "com.example.a213396_lingchinwei_drnazatulaini_lab3"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
